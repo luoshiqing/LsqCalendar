@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarCollectionViewCell" id="gTV-IL-0wX" customClass="CalendarCollectionViewCell" customModule="LsqCalendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="62"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="62"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNP-rQ-vBX">
+                        <rect key="frame" x="0.0" y="11" width="75" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="白班" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zir-Jm-HcW">
+                                <rect key="frame" x="0.0" y="28" width="75" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNL-0p-LBD">
+                                <rect key="frame" x="25" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="SQ2-tR-9Tw"/>
+                                    <constraint firstAttribute="height" constant="25" id="wYD-Mm-qph"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zir-Jm-HcW" secondAttribute="trailing" id="3Y1-ll-5dP"/>
+                            <constraint firstItem="JNL-0p-LBD" firstAttribute="top" secondItem="KNP-rQ-vBX" secondAttribute="top" id="5Qc-yE-WZH"/>
+                            <constraint firstAttribute="height" constant="40" id="6Mf-I6-CUy"/>
+                            <constraint firstItem="Zir-Jm-HcW" firstAttribute="top" secondItem="JNL-0p-LBD" secondAttribute="bottom" constant="3" id="PlW-NH-ieV"/>
+                            <constraint firstItem="JNL-0p-LBD" firstAttribute="centerX" secondItem="KNP-rQ-vBX" secondAttribute="centerX" id="ZNm-ul-goe"/>
+                            <constraint firstItem="Zir-Jm-HcW" firstAttribute="leading" secondItem="KNP-rQ-vBX" secondAttribute="leading" id="aXB-dV-3lB"/>
+                            <constraint firstAttribute="bottom" secondItem="Zir-Jm-HcW" secondAttribute="bottom" id="mkj-bv-X06"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KNP-rQ-vBX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Jg-W7-fpE"/>
+                <constraint firstItem="KNP-rQ-vBX" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="EBJ-7d-Saz"/>
+                <constraint firstAttribute="trailing" secondItem="KNP-rQ-vBX" secondAttribute="trailing" id="VtN-4D-5dJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="75" height="62"/>
+            <connections>
+                <outlet property="dateLabel" destination="JNL-0p-LBD" id="qC6-fM-IXH"/>
+                <outlet property="valueLabel" destination="Zir-Jm-HcW" id="8kS-mv-Mav"/>
+            </connections>
+            <point key="canvasLocation" x="-266.39999999999998" y="99.850074962518747"/>
+        </collectionViewCell>
+    </objects>
+</document>
